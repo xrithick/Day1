@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — SmartAttend</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">📘 SmartAttend</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p>Questions, feedback, or feature requests — we'd love to hear from you.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div>
+      <h2>Contact Information</h2>
+      <p><strong>📧 Email:</strong> xrithick620@gmail.com</p>
+      <p><strong>📞 Phone:</strong> +91 8220814532</p>
+      <p><strong>📍 Address:</strong> Trichy, India</p>
+      <p><strong>🕒 Hours:</strong> Mon–Fri, 9 AM – 6 PM IST</p>
+
+      <h3 style="margin-top:2rem;">Follow us</h3>
+      <p>Twitter · LinkedIn · GitHub</p>
+    </div>
+
+    <form class="form-card" id="contactForm">
+      <div class="field"><label>Your Name</label><input type="text" required/></div>
+      <div class="field"><label>Email</label><input type="email" required/></div>
+      <div class="field"><label>Subject</label><input type="text" required/></div>
+      <div class="field"><label>Message</label><textarea rows="5" required></textarea></div>
+      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      <p id="cMsg" class="form-msg"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><p>© 2026 SmartAttend</p></div></footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('cMsg').textContent = '✅ Thanks! Your message has been recorded.';
+  this.reset();
+});
+</script>
+</body>
+</html>
